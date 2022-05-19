@@ -26,8 +26,8 @@ onClick(squarePerimeter, () => {
 
 // Сделайте калькулятор, который будет находить площадь и периметр прямоугольника.
 
-const rectangleLength = document.querySelector(".rectangle-length");
-const rectangleWidth = document.querySelector(".rectangle-width");
+const rectangleLength = document.querySelector("#rectangle-length");
+const rectangleWidth = document.querySelector("#rectangle-width");
 const rectangleArea = document.querySelector(".rectangle-area");
 const rectanglePerimeter = document.querySelector(".rectangle-perimeter");
 const rectangleResult = document.querySelector(".rectangle-result");
@@ -49,7 +49,7 @@ onClick(rectanglePerimeter, () => {
 
 // Сделайте калькулятор, который будет находить площадь круга и длину окружности.
 
-const radiusCircle = document.querySelector(".radius-circle");
+const radiusCircle = document.querySelector("#radius-circle");
 const circleArea = document.querySelector(".circle-area");
 const circleCircumference = document.querySelector(".circle-circumference");
 const circleResult = document.querySelector(".circle-result");
@@ -69,9 +69,9 @@ onClick(circleCircumference, () => {
 
 //Сделайте калькулятор, который будет находить площадь треугольника по трем сторонам.
 
-const lengthA = document.querySelector(".length-a");
-const lengthB = document.querySelector(".length-b");
-const lengthC = document.querySelector(".length-c");
+const lengthA = document.querySelector("#length-a");
+const lengthB = document.querySelector("#length-b");
+const lengthC = document.querySelector("#length-c");
 const trigonArea = document.querySelector(".trigon-area")
 const trigonResult = document.querySelector(".trigon-result")
 
