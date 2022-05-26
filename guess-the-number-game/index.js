@@ -29,3 +29,12 @@ numberGame.addEventListener("input", () => {
     resultGame.innerHTML = "вы угадали";
   }
 });
+
+
+const obj = {
+  p: 'paragraph',
+  div: 'div div div',
+  span: 'span span span'
+}
+
+obj[input.value] // 
