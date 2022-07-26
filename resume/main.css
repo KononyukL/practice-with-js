@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 100px;
+  background-color: ghostwhite;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  min-height: 100vh;
+}
+.header {
+  border-bottom: 1px solid grey;
+}
+.avatar {
+  min-width: 120px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid gray;
+  transition: transform 0.5s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.avatar-name {
+  display: flex;
+  align-items: center;
+}
+h1,
+h2 {
+  color: #696969;
+  text-shadow: 1px 1px 3px gray;
+}
+.name-container {
+  padding-left: 50px;
+  font-size: 30px;
+}
+
+.main-history,
+.main-education,
+.main-experience,
+.personal-skills {
+  margin: 30px 0;
+  border-bottom: 1px solid grey;
+  text-align: justify;
+}
+.main {
+  line-height: 30px;
+}
+.education-data {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  line-height: 20px;
+}
+a:link {
+  color: #696969;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2f4f4f;
+  transition: color 0.3s ease;
+}
+.phone {
+  background-image: url("/assets/icons/phone-icon.jpg");
+}
+
+.mail {
+  background-image: url("/assets/icons/letter.png");
+}
+
+.mail,
+.phone {
+  margin: 0;
+  padding: 5px 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 30px;
+  font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  .container {
+    margin: 0 30px;
+  }
+
+  .name-container {
+    padding-left: 40px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+    margin: 0 10px;
+  }
+  .name-container {
+    padding-left: 20px;
+    font-size: 18px;
+  }
+
+  .mail,
+  .phone {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+
+  .name-container {
+    padding-left: 10px;
+    font-size: 16px;
+  }
+}
